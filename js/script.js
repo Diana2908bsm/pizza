@@ -42,3 +42,32 @@ function getItems(className) {
         }
     })
 }
+// ------------------burger------------------------------------------------
+const burger = document.querySelector('.header__burger');
+const list = document.querySelector('.header-top__column')
+const body = document.querySelector('body')
+burger.addEventListener('click', () => {
+    burger.classList.toggle('active')
+    list.classList.toggle('active')
+    body.classList.toggle('hide')
+})
+// ---------------------счетчик---------------------------------
+window.addEventListener('click', function (event) {
+    let counter;
+
+    if (event.target.dataset.action === 'plus' || event.target.dataset.action === 'minus') {
+        const counterWrapper = event.target.closest('.menu__dobov')
+        counter = counterWrapper.querySelector('[data-counter]')
+
+
+    }
+    if (event.target.dataset.action === 'plus') {
+        counter.innerText = ++counter.innerText
+    }
+    if (event.target.dataset.action === 'minus') {
+        if (parseInt(counter.innerText) > 1) {
+            counter.innerText = --counter.innerText;
+        }
+    }
+
+})
