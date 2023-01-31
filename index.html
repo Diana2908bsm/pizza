@@ -19,7 +19,7 @@
             <header class="header">
                 <div class="header__container container">
                     <div class="header-top">
-                        <div class="header-top__inner">
+                        <div class="header-top__inner container">
                             <a href="#" class="header-top__logo">
                                 <img src="img/logo.png" alt="">
                             </a>
@@ -54,6 +54,7 @@
                                     <span class="material-symbols-outlined">
                                         weight
                                     </span>
+                                    <div class="popup"></div>
                                 </a>
                                 <div class="header__burger">
                                     <span class=""></span>
@@ -64,6 +65,7 @@
 
                     </div>
                 </div>
+
             </header>
             <main class="main">
                 <div class="main__container container">
@@ -113,7 +115,7 @@
                     </div>
                 </div>
                 <div class="menu__column">
-                    <div class="menu__item">
+                    <div data-id="1" class="menu__item">
                         <img src="img/menu-1.png" alt="" class="menu__img">
                         <div class="menu-item__title">Итальянская</div>
                         <div class="menu-item__text">Начинка: лук, картофель, помидор, грибы, сыр, оливки, мясо...
@@ -132,9 +134,9 @@
                                 <div class="menu__plus" data-action="plus">+</div>
                             </div>
                         </div>
-                        <a href="" data-cart class="menu__button btn">Заказать</a>
+                        <button data-cart class="menu__button btn">Заказать</button>
                     </div>
-                    <div class="menu__item seafood">
+                    <div data-id="2" class="menu__item seafood">
                         <img src="img/menu-2.png" alt="" class="menu__img">
                         <div class="menu-item__title">Венеция</div>
                         <div class="menu-item__text">Начинка: лук, картофель, помидор, грибы, сыр, оливки, мясо...
@@ -153,9 +155,9 @@
                                 <div class="menu__plus" data-action="plus">+</div>
                             </div>
                         </div>
-                        <a href="" data-cart class="menu__button btn">Заказать</a>
+                        <button data-cart class="menu__button btn">Заказать</button>
                     </div>
-                    <div class="menu__item meat">
+                    <div data-id="3" class="menu__item meat">
                         <img src="img/menu-3.png" alt="" class="menu__img">
                         <div class="menu-item__title">Мясная</div>
                         <div class="menu-item__text">Начинка: лук, картофель, помидор, грибы, сыр, оливки, мясо...
@@ -174,9 +176,9 @@
                                 <div class="menu__plus" data-action="plus">+</div>
                             </div>
                         </div>
-                        <a href="" data-cart class="menu__button btn">Заказать</a>
+                        <button data-cart class="menu__button btn">Заказать</button>
                     </div>
-                    <div class="menu__item ">
+                    <div data-id="4" class="menu__item ">
                         <img src="img/menu-4.png" alt="" class="menu__img">
                         <div class="menu-item__title">Сырная</div>
                         <div class="menu-item__text">Начинка: лук, картофель, помидор, грибы, сыр, оливки, мясо...
@@ -195,9 +197,9 @@
                                 <div class="menu__plus" data-action="plus">+</div>
                             </div>
                         </div>
-                        <a href="" data-cart class="menu__button btn">Заказать</a>
+                        <button data-cart class="menu__button btn">Заказать</button>
                     </div>
-                    <div class="menu__item meat">
+                    <div data-id="5" class="menu__item meat">
                         <img src="img/menu-5.png" alt="" class="menu__img">
                         <div class="menu-item__title">Аргентинская</div>
                         <div class="menu-item__text">Начинка: лук, картофель, помидор, грибы, сыр, оливки, мясо...
@@ -216,10 +218,10 @@
                                 <div class="menu__plus" data-action="plus">+</div>
                             </div>
                         </div>
-                        <a href="" data-cart class="menu__button btn">Заказать</a>
+                        <button data-cart class="menu__button btn">Заказать</button>
                     </div>
 
-                    <div class="menu__item mushroom">
+                    <div data-id="6" class="menu__item mushroom">
                         <img src="img/menu-6.png" alt="" class="menu__img">
                         <div class="menu-item__title ">Грибная</div>
                         <div class="menu-item__text">Начинка: лук, картофель, помидор, грибы, сыр, оливки, мясо...
@@ -238,10 +240,10 @@
                                 <div class="menu__plus" data-action="plus">+</div>
                             </div>
                         </div>
-                        <a href="" data-cart class="menu__button btn">Заказать</a>
+                        <button data-cart class="menu__button btn">Заказать</button>
                     </div>
 
-                    <div class="menu__item vegetables">
+                    <div data-id="7" class="menu__item vegetables">
                         <img src="img/menu-7.png" alt="" class="menu__img">
                         <div class="menu-item__title">Томато</div>
                         <div class="menu-item__text">Начинка: лук, картофель, помидор, грибы, сыр, оливки, мясо...
@@ -260,10 +262,10 @@
                                 <div class="menu__plus" data-action="plus">+</div>
                             </div>
                         </div>
-                        <a href="" data-cart class="menu__button btn">Заказать</a>
+                        <button data-cart class="menu__button btn">Заказать</button>
                     </div>
 
-                    <div class="menu__item vegetables">
+                    <div data-id="8" class="menu__item vegetables">
                         <img src="img/menu-8.png" alt="" class="menu__img">
                         <div class="menu-item__title">Итальянская x2</div>
                         <div class="menu-item__text">Начинка: лук, картофель, помидор, грибы, сыр, оливки, мясо...
@@ -282,13 +284,14 @@
                                 <div class="menu__plus" data-action="plus">+</div>
                             </div>
                         </div>
-                        <a href="" data-cart class="menu__button btn">Заказать</a>
+                        <button data-cart class="menu__button btn">Заказать</button>
                     </div>
 
 
                 </div>
             </div>
-            <!--<div class="events">
+
+            <div class="events">
                 <div class="events__container container">
                     <div class="events__inner">
                         <div class="events__item ev-01">
@@ -331,7 +334,7 @@
                     </div>
                 </div>
             </div>
-            <div class="about-us">
+            <!--<div class="about-us">
                 <div class="about-us__container container">
                     <div class="about-us__inner">
                         <div class="about-us__box">
