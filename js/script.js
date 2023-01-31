@@ -87,12 +87,12 @@ window.addEventListener('click', function (event) {
         }
         const itemInCart = popup.querySelector(`[data-id="${productInfo.id}"]`);
 
-        console.log(itemInCart)
+
         if (itemInCart) {
             const counterElement = itemInCart.querySelector('.popup__counter');
-            console.log(counterElement)
+
             counterElement.innerText = parseInt(counterElement.innerText) + parseInt(productInfo.counter);
-            console.log(counterElement)
+
         }
         else {
 
@@ -115,9 +115,20 @@ window.addEventListener('click', function (event) {
 
 
             popup.insertAdjacentHTML('beforeend', cartItemHTML)
+            setTimeout(function () {
+                popup.style.display = "none"
+            }, 3000)
+
         }
+
+        popup.style.display = "block";
+        setTimeout(function () {
+            popup.style.display = "none"
+        }, 8000)
 
     }
 
+
 })
+
 

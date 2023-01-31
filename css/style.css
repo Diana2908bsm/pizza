@@ -226,6 +226,7 @@ body {
     
 }
 .popup__container {
+    margin-bottom: 15px;
     background: rgba(30, 13, 1, 0.9);
     padding: 10px;
     border-radius: 15px;
@@ -792,6 +793,9 @@ body.hide {
     .events__in {
         grid-template-columns: repeat(3, 300px);
     }
+    .popup{
+        right: 20px;   
+    }
 }
 @media (max-width: 998px) {
     .main__inner {
@@ -963,6 +967,9 @@ body.hide {
     .events__item{
         margin-bottom: 15px;
     }
+    .popup {
+        right: 0;
+    }
 }
 
 @media (max-width: 898px) {
@@ -971,6 +978,23 @@ body.hide {
     }
     .menu__name {
         padding: 13px 15px;
+    }
+    .popup__img img {
+        width: 90px;
+    }
+    .popup__container {
+        width: 110px;
+    }
+    .popup__price {
+        font-size: 13px;
+        padding-bottom: 7px;
+    }
+    .container{
+        padding: 0 10px;
+    }
+    .popup{
+        top: 40px;
+        right: -60px;
     }
    
     
