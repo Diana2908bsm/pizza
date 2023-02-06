@@ -77,6 +77,7 @@ window.addEventListener('click', function (event) {
 
     if (event.target.hasAttribute('data-cart')) {
         const card = event.target.closest('.menu__item')
+
         const productInfo = {
             id: card.dataset.id,
             imgSrc: card.querySelector('.menu__img').getAttribute('src'),
@@ -93,6 +94,8 @@ window.addEventListener('click', function (event) {
 
             counterElement.innerText = parseInt(counterElement.innerText) + parseInt(productInfo.counter);
 
+
+
         }
         else {
 
@@ -107,7 +110,7 @@ window.addEventListener('click', function (event) {
                 <div class="popup__price">Цена : ${productInfo.price}</div>
                 <div class="popup__box">
                 <div class="popup__title-counter">Кол-во :</div>
-                <div class="popup__counter"> ${productInfo.counter}</div>
+                <div class="popup__counter" data-counter> ${productInfo.counter}</div>
                 </div>
             </div>
            </div>`;
@@ -115,16 +118,34 @@ window.addEventListener('click', function (event) {
 
 
             popup.insertAdjacentHTML('beforeend', cartItemHTML)
-            setTimeout(function () {
-                popup.style.display = "none"
-            }, 3000)
+
 
         }
+        function showCounter() {
 
-        popup.style.display = "block";
-        setTimeout(function () {
-            popup.style.display = "none"
-        }, 8000)
+            const cartCounter = document.querySelector('.counter');
+            const cartCounterNumber = document.querySelector('.counter__number');
+            const priceElements = popup.querySelectorAll('.popup__counter');
+            let priceTotal = 0;
+            priceElements.forEach(function (item) {
+                const amountEl = item.closest('.popup__container').querySelector('[data-counter]')
+                priceTotal += parseInt(amountEl.innerText);
+
+            })
+            cartCounter.style.display = "block";
+            cartCounterNumber.innerText = parseInt(priceTotal)
+
+
+
+
+
+
+
+        }
+        showCounter()
+
+
+
 
     }
 
