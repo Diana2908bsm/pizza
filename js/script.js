@@ -130,8 +130,10 @@ window.addEventListener('click', function (event) {
             priceElements.forEach(function (item) {
                 const amountEl = item.closest('.popup__container').querySelector('[data-counter]')
                 priceTotal += parseInt(amountEl.innerText);
-
+                console.log(amountEl)
+                console.log(priceTotal)
             })
+            console.log(priceElements)
             cartCounter.style.display = "block";
             cartCounterNumber.innerText = parseInt(priceTotal)
 

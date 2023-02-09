@@ -360,8 +360,81 @@ body {
 }
 .main__img {
 }
-/* ----------------------------------popup----------------------------- */
+/* ----------------------------------enter----------------------------- */
+.enter {
+    position: fixed;
+    top: 15%;
+    left: 35%;
+width: 328px;
+height: 468px;
+margin: 0 auto;
+background: #210A01;
+padding: 20px;
+}
+.enter__inner {
+    padding-bottom: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+.enter__title {
+    font-weight: 400;
+font-size: 22px;
+line-height: 27px;
 
+
+
+color: #FFFFFF
+}
+.enter__exit {
+cursor: pointer;
+}
+.form {
+}
+.enter__box {
+    margin-bottom: 30px;
+}
+.enter__label-name,
+.enter__label-tel {
+    font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+color: #FFFFFF;
+}
+.enter__name,
+.enter__tel {
+    display: block;
+    border: 1px solid #FFA329;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    padding: 2px 15px;
+}
+
+
+.enter__btn {
+
+    margin:0 auto;
+    background: linear-gradient(261.69deg, #FF5D29 12.12%, #FE9C1C 86.72%);
+border-radius: 33px;
+width: 204px;
+height: 45px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+color: #FFFFFF;
+}
+.enter__box:nth-child(2n){
+    margin-bottom: 50px;
+}
+.error .enter__name {
+    border-color: red;
+}
+.error .enter__tel {
+    border-color: red;
+}
 /* ----------------------------------------menu--------------------------------------- */
 .menu {
 }
@@ -752,6 +825,9 @@ body.hide {
     }
     .events__title{
         font-size: 22px;
+    }
+    .about-us__inner{
+        
     }
 }
 @media (max-width: 1195px) {
