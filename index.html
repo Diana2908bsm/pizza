@@ -49,7 +49,7 @@
                             </div>
 
                             <div class="header-top__buttons">
-                                <a href="" class="header-top__btn">Войти</a>
+                                <a data-modal href="#" class="header-top__btn">Войти</a>
                                 <a href="" class="header-top__lk">
                                     <span class="material-symbols-outlined">
                                         weight
@@ -74,7 +74,7 @@
                 <div class="enter__inner">
                     <div></div>
                     <div class="enter__title">Вход</div>
-                    <div class="enter__exit">Х</div>
+                    <div data-close class="enter__exit">Х</div>
                 </div>
                 <form action="" id="add-form" class="form">
                     <div class="enter__box">
@@ -82,8 +82,8 @@
                         <input type="text" class="enter__name" placeholder="Имя">
                     </div>
                     <div class="enter__box">
-                        <label for="" class="enter__label-tel" placeholder="Телефон">Телефон</label>
-                        <input type="text" class="enter__tel">
+                        <label for="" class="enter__label-tel">Телефон</label>
+                        <input type="text" class="enter__tel" placeholder="Телефон">
                     </div>
                     <button type="submit" class="enter__btn">Войти</button>
                 </form>

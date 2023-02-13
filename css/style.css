@@ -361,7 +361,9 @@ body {
 .main__img {
 }
 /* ----------------------------------enter----------------------------- */
+
 .enter {
+    display: none;
     position: fixed;
     top: 15%;
     left: 35%;
@@ -370,6 +372,7 @@ height: 468px;
 margin: 0 auto;
 background: #210A01;
 padding: 20px;
+z-index: 111;
 }
 .enter__inner {
     padding-bottom: 45px;
@@ -434,6 +437,9 @@ color: #FFFFFF;
 }
 .error .enter__tel {
     border-color: red;
+}
+.error__label{
+    
 }
 /* ----------------------------------------menu--------------------------------------- */
 .menu {
