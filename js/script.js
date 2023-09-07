@@ -154,7 +154,5 @@
 
 // })
 
-import {} from './Footer.js';
-import {} from './Header.js';
-import {} from './Product.js';
+
 
