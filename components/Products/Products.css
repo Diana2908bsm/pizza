@@ -161,3 +161,6 @@
     line-height: 109.5%;
     color: #ffffff;
 }
+.menu__button--active{
+    background: linear-gradient(261.69deg, #ba2d00 12.12%, #c56f00 86.72%);
+}

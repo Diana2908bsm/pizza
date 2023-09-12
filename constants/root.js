@@ -1,2 +1,3 @@
 const ROOT_PRODUCTS = document.getElementById('products')
-console.log(ROOT_PRODUCTS)
+const ROOT_HEADER = document.getElementById('header')
+const ROOT_SHOPPING = document.getElementById('shopping')

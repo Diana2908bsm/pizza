@@ -1,10 +1,35 @@
-
 class Products {
+    constructor() {
+        this.classNameActive = "menu__button--active";
+        this.labelAdd = "Заказать";
+        this.labelRemove = "Удалить из корзины";
+    }
+
+    handleSetLocationStorage(element, id) {
+        const { pushProduct, products } = localStorageUtil.putProducts(id);
+        if (pushProduct) {
+            element.classList.add(this.classNameActive);
+            element.innerHTML = this.labelRemove;
+        } else {
+            element.classList.remove(this.classNameActive);
+            element.innerHTML = this.labelAdd;
+        }
+        headerPage.render(products.length);
+    }
 
     render() {
-        let htmlCatalog = '';
+        const productsStore = localStorageUtil.getProducts();
+        let htmlCatalog = "";
 
-        CATALOG.forEach(({ id, name, price,text, img }) => {
+        CATALOG.forEach(({ id, name, price, text, img }) => {
+            let activeClass = "";
+            let activeText = "";
+            if (productsStore.indexOf(id) === -1) {
+                activeText = this.labelAdd;
+            } else {
+                activeText = this.labelRemove;
+                activeClass = " "+this.classNameActive;
+            }
             htmlCatalog += `
         <div class="menu__item">
     <img src="${img}" alt="" class="menu__img" />
@@ -17,12 +42,10 @@ class Products {
     </div>
     <div class="menu__box">
         <div class="menu__price">${price} руб</div>
-        <div class="menu__dobov">
-            <div class="menu__minus" data-action="minus">-</div>
-            <div class="menu__plus" data-action="plus">+</div>
-        </div>
     </div>
-    <button data-cart class="menu__button btn">Заказать</button>
+    <button class="menu__button${activeClass}" onclick="productsPage.handleSetLocationStorage(this, '${id}');">
+                        ${activeText}
+    </button>
 </div>
             `;
         });
@@ -41,6 +64,3 @@ class Products {
 
 const productsPage = new Products();
 productsPage.render();
-
-
-

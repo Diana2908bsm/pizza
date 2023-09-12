@@ -5,7 +5,7 @@ const CATALOG = [
         img:'img/menu-1.png',
         type:'',
         text:'Начинка: лук, картофель, помидор, грибы, сыр, оливки, мясо',
-        price:'540',        
+        price:540,        
     },
     {
         id:'el2',
@@ -13,7 +13,7 @@ const CATALOG = [
         img:'img/menu-2.png',
         type:'',
         text:'Начинка: лук, картофель, помидор, грибы, сыр, оливки, мясо',
-        price:'450',        
+        price:450,        
     },
     {
         id:'el3',
@@ -21,7 +21,7 @@ const CATALOG = [
         img:'img/menu-3.png',
         type:'',
         text:'Начинка: лук, картофель, помидор, грибы, сыр, оливки, мясо',
-        price:'610',        
+        price:610,        
     },
     {
         id:'el4',
@@ -29,7 +29,7 @@ const CATALOG = [
         img:'img/menu-4.png',
         type:'',
         text:'Начинка: лук, картофель, помидор, грибы, сыр, оливки, мясо',
-        price:'540',        
+        price:540,        
     },
     {
         id:'el5',
@@ -37,7 +37,7 @@ const CATALOG = [
         img:'img/menu-5.png',
         type:'',
         text:'Начинка: лук, картофель, помидор, грибы, сыр, оливки, мясо',
-        price:'450',        
+        price:450,        
     },
     {
         id:'el6',
@@ -45,7 +45,7 @@ const CATALOG = [
         img:'img/menu-6.png',
         type:'',
         text:'Начинка: лук, картофель, помидор, грибы, сыр, оливки, мясо',
-        price:'320',        
+        price:320,        
     },
     {
         id:'el7',
@@ -53,7 +53,7 @@ const CATALOG = [
         img:'img/menu-7.png',
         type:'',
         text:'Начинка: лук, картофель, помидор, грибы, сыр, оливки, мясо',
-        price:'450',        
+        price:450,        
     }
     ,
     {
@@ -62,6 +62,6 @@ const CATALOG = [
         img:'img/menu-7.png',
         type:'',
         text:'Начинка: лук, картофель, помидор, грибы, сыр, оливки, мясо',
-        price:'540',        
+        price:540,        
     }
 ]
